@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00000000</color>
+    <color name="colorPrimaryDark">#00000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorBrokenWhite">#ebebeb</color>
+    <color name="dokuColor">#CC1920</color>
+    <color name="dokuColorDark">#91292A</color>
+    <color name="dokuColorLight">#CC4F43</color>
+    <color name="dokuChatBoxLight">#E5E7E7</color>
+    <color name="darkGrey">#2E2E2E</color>
+    <color name="Grey">#a3a3a3</color>
+    <color name="Black">#000000</color>
+</resources>

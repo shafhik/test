@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Include the AppBarLayout -->
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_frag"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/video_info_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="9.67dp"
+        android:paddingBottom="9.67dp"
+        android:paddingLeft="18.33dp"
+        android:paddingRight="18.33dp"
+        android:orientation="horizontal"
+        android:background="@color/darkGrey"
+        android:layout_below="@+id/youtube_video">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".70"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:id="@+id/tittle_Video"
+            android:layout_marginLeft="18.33dp"
+            android:layout_marginRight="26.5dp"
+            android:text="video title"
+            android:fontFamily="sans-serif-condensed"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight=".20"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@drawable/ic_thumb_up_off"
+            android:id="@+id/like_button"
+            android:background="@android:color/transparent"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".10"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="28.67dp"
+            android:id="@+id/likers"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:text=""/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/video_comment_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>

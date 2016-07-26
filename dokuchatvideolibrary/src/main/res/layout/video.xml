@@ -1,0 +1,64 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/extend_toolbar"
+            android:background="@color/dokuColor"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <!-- Include the AppBarLayout -->
+                <include layout="@layout/toolbar"
+                    />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/video_recycler_view"
+                android:layout_marginRight="8.67dp"
+                android:layout_marginLeft="8.67dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_below="@id/toolbar"/>
+
+            <RelativeLayout
+                android:id="@+id/container_video_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:visibility="gone"
+                android:layout_below="@id/toolbar">
+
+                <ImageView
+                    android:id="@+id/img_empty_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_empty_video"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak ada video yang dapat ditampilkan"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@id/img_empty_video"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</android.support.v4.widget.DrawerLayout>

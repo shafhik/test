@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_cam"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_message_attach_camera"
+        android:paddingLeft="24dp"
+        android:text="Ambil Foto"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="@dimen/activity_vertical_margin"/>
+
+    <Button
+        android:id="@+id/button_img"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_message_attach_gallery"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="24dp"
+        android:text="Pilih dari album"
+        android:drawablePadding="@dimen/activity_vertical_margin" />
+</LinearLayout>

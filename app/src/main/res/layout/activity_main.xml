@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Required For Acessing All Feature"
+        android:textColor="@color/dokuColorDark"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CO Brand ID : "
+        android:textColor="@color/Black"
+        android:textSize="12dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:id="@+id/txt_id"
+        android:text="1"
+        android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CO Color : "
+            android:textColor="@color/Black"
+            android:textSize="12dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="color"
+            android:id="@+id/txt_color"
+            android:text="#CC1920"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Required For Acessing Chat Feature"
+        android:textColor="@color/dokuColorDark"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ref ID : "
+            android:textColor="@color/Black"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:text="fc72b74352355b4b031d6ab1860bbec249dc9ea076bbedf46c15f7eab128a8f3@doku.com"
+            android:id="@+id/txt_email"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password : "
+            android:textColor="@color/Black"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:id="@+id/txt_user_name"
+            android:text="d54a33c1fe5d1f3d03673593d650cfcd"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Required For Acessing Video Feature"
+        android:textColor="@color/dokuColorDark"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name: "
+            android:textColor="@color/Black"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="userName"
+            android:id="@+id/txt_token"
+            android:text="Murni"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avatar URL: "
+            android:textColor="@color/Black"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="avatar"
+            android:text="http://findicons.com/files/icons/2229/social_media_mini/48/google.png"
+            android:id="@+id/txt_avatar"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*note : video acessing also using email from refID: "
+        android:textColor="@color/Black"
+        android:textSize="12dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video"
+        android:id="@+id/btn_lib"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:id="@+id/btn_lib2"/>
+</LinearLayout>

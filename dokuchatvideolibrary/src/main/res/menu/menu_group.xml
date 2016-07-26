@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="id.co.dycode.myapplication.MainActivity">
+    <item
+        android:id="@+id/change_grup_avatar"
+        android:orderInCategory="100"
+        android:title="Ganti profil grup"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_view_user"
+        android:orderInCategory="100"
+        android:title="Lihat Anggota"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_add_user"
+        android:orderInCategory="100"
+        android:title="Tambah Anggota"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_leave_group"
+        android:orderInCategory="100"
+        android:title="Tinggalkan Grup"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@color/colorWhite"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp">
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:text="A"
+        android:textSize="30sp"
+        android:textColor="@color/Grey"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="left"
+        android:id="@+id/contact_first_letter"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/imagemaskframe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/contact_avatar"
+                android:src="@drawable/dokuicon"
+                android:layout_marginLeft="9.33dp"
+                android:layout_marginRight="8.81dp"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/img_contact_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_contact_selected"
+                android:layout_gravity="right|bottom" />
+        </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:textSize="16.67sp"
+            android:id="@+id/contact_name"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustPan"
+    android:background="@color/colorWhite">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_alignParentTop="true"
+        android:id="@+id/view">
+
+        <!-- Include the AppBarLayout -->
+        <include layout="@layout/toolbar"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <EditText
+        android:id="@+id/inpSearchContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft ="5dp"
+        android:layout_marginEnd  ="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingBottom="24dp"
+        android:paddingTop="8dp"
+        android:layout_below="@id/view"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        android:hint="@string/hint_search_contact"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contact_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@id/inpSearchContact"
+        android:background="@color/colorWhite"
+        />
+
+    <RelativeLayout
+        android:id="@+id/container_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_empty_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_empty_contact"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak ada kontak yang dapat ditampilkan"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/img_empty_contact"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+        <!-- Include the AppBarLayout -->
+        <include layout="@layout/toolbar" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Tambah komentar..."
+            android:gravity="top|left"
+            android:layout_below="@+id/toolbar"
+            android:padding="30dp"
+            android:id="@+id/edit_video_comment"/>
+</RelativeLayout>

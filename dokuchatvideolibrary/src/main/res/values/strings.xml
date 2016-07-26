@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Doku Chat Video Library</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="app_home">Beranda</string>
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+
+    <string name="API_URL">http://sandbox.qisc.us/</string>
+    <string name="API_URL_MOBILE">https://qiscusdoku.herokuapp.com/api/v1/mobile/</string>
+    <string name="API_URL_SIGNIN">https://qiscusdoku.herokuapp.com/users/sign_in.json</string>
+    <string name="API_URL_UPLOAD">https://upload.qisc.us/upload.php</string>
+    <string name="API_URL_VIDEO">http://doku.cloudapp.net/api/</string>
+    <string name="API_DOKU">http://dev.dokupay.com/DWMobileAPI/</string>
+    <string name="DOKU_API_VERSION">3.0</string>
+    <string name="DOKU_PARTNER_KEY">Q!5cD0</string>
+    <string name="YOUTUBE_API_KEY">AIzaSyA9Zj52t6ui_nKuP6zN-6L7mHkcG8cR72U</string>
+    <string name="PUSHER_KEY">88b78eb3d4dec0795ff2</string>
+
+    <string name="grouping_chat_1">SIARAN</string>
+    <string name="grouping_chat_2">SALURAN</string>
+    <string name="grouping_chat_3">GRUP</string>
+    <string name="grouping_chat_4">KONTAK</string>
+
+    <string name="title_chat">Percakapan</string>
+    <string name="title_video">Video</string>
+    <string name="hint_search_contact">Type contact name..</string>
+
+    <string name="internet_connection_alert_tittle">Gagal mengidentifikasi pengguna</string>
+    <string name="internet_connection_alert_message">Harap memeriksa kembali sambungan internet anda</string>
+    <string name="internet_connection_waiting">Harap menunggu</string>
+    <string name="title_contact">Kontak</string>
+    <string name="image">Photo</string>
+    <string name="tap_to_start">Tekan untuk memulai chatting</string>
+    <string name="not_connected">Tidak tersambung ke jaringan</string>
+
+</resources>
